@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>its showtime...</title>
+</head>
+<body>
+    <div>its showtime</div>
+    <img src="https://upload.wikimedia.org/wikipedia/en/2/22/Mr._Incredible.png">
+    <div></div>
+    <button id="duck">release the canny</button>
+</body>
+<script>
+    var released = false
+    document.getElementById("duck").addEventListener("click",nowYouveDoneIt)
+    setInterval(death,1)
+    function nowYouveDoneIt(){
+        released=true
+    }
+function death(){
+    if(released===true){
+        window.open("Mr._Incredible.png", "_blank");
+    }
+}
+</script>
+</html>
